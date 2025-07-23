@@ -1,44 +1,44 @@
 /**
- * Mural MFP - Script para efeitos visuais de post-its
+ * Programming Tips Board - Script for post-it visual effects
  * 
- * Este script aplica rotações aleatórias e cores variadas aos post-its
- * para dar um aspecto mais realista ao mural.
+ * This script applies random rotations and varied colors to post-its
+ * to give a more realistic look to the board.
  */
 document.addEventListener('DOMContentLoaded', function() {
-    // Aplicar efeitos visuais aos post-its
+    // Apply visual effects to post-its
     applyVisualEffects();
 });
 
 /**
- * Aplica efeitos visuais aos post-its
- * - Rotação aleatória
- * - Cores variadas
- * - Sombras para efeito 3D
+ * Applies visual effects to post-its
+ * - Random rotation
+ * - Varied colors
+ * - Shadows for 3D effect
  */
 function applyVisualEffects() {
-    // Obter todos os post-its
+    // Get all post-its
     const tipCards = document.querySelectorAll('.tip-card');
     
-    // Cores de post-its para variação (tons pastéis variados, sem roxo/lilás)
+    // Post-it colors for variation (varied pastel tones, no purple/lilac)
     const colors = [
-        '#ffffcc', // amarelo pastel
-        '#e6fff2', // verde pastel
-        '#e6f7ff', // azul pastel
+        '#ffffcc', // pastel yellow
+        '#e6fff2', // pastel green
+        '#e6f7ff', // pastel blue
     ];
     
-    // Aplicar estilos aleatórios a cada post-it
+    // Apply random styles to each post-it
     tipCards.forEach(card => {
-        // Rotação aleatória entre -3 e 3 graus
+        // Random rotation between -3 and 3 degrees
         const rotation = Math.random() * 6 - 3;
         
-        // Cor aleatória do array de cores
+        // Random color from the colors array
         const colorIndex = Math.floor(Math.random() * colors.length);
         
-        // Aplicar estilos
+        // Apply styles
         card.style.transform = `rotate(${rotation}deg)`;
         card.style.backgroundColor = colors[colorIndex];
         
-        // Adicionar sombra para dar efeito de profundidade
+        // Add shadow for depth effect
         card.style.boxShadow = '2px 2px 5px rgba(0,0,0,0.2)';
     });
 }
