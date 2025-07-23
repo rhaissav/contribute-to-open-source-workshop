@@ -19,11 +19,14 @@ function applyVisualEffects() {
     // Get all post-its
     const tipCards = document.querySelectorAll('.tip-card');
     
-    // Post-it colors for variation (varied pastel tones, no purple/lilac)
+    // Classic sticky note colors
     const colors = [
-        '#ffffcc', // pastel yellow
-        '#e6fff2', // pastel green
-        '#e6f7ff', // pastel blue
+        '#FFFF88', // classic yellow
+        '#FF7EB9', // classic pink
+        '#7AFDD6', // classic mint green
+        '#AEC6FF', // classic blue
+        '#FFB347', // classic orange
+        '#DDA0DD', // classic purple
     ];
     
     // Apply random styles to each post-it
