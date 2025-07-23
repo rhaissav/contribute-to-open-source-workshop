@@ -16,7 +16,7 @@ By the end of this workshop, you'll know how to:
 
 This project creates a virtual board where participants can share programming tips, strategies, and experiences through colorful post-it notes. It's designed specifically to teach the open source contribution workflow in a fun, hands-on way.
 
-**Why a tips board?** It's simple enough for beginners to understand, but meaningful enough to create real value for the community!
+**Why a tips board?** It's simple enough for beginners to contribute, but meaningful enough to create real value for the community!
 
 - Visual post-it board style with random colors and rotations
 - Easy contribution through direct HTML code editing
